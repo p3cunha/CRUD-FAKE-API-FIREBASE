@@ -1,0 +1,28 @@
+
+<div class="nav">
+    Cadastro de funcionários
+  </div>
+
+<form (ngSubmit)="onSubmit()">
+    <div class="formgroup">
+        <label>Nome</label>
+        <input type="text" name="nome"[(ngModel)]="funcionario.nome" class="form-control"
+        placeholder="Nome do funcionário">
+    </div>
+
+    <div class="formgroup">
+        <label>Departamento</label>
+        <input type="text" name="departamento"[(ngModel)]="funcionario.departamento" class="form-control"
+        placeholder="Nome do departamento">
+    </div>
+
+    <div class="formgroup">
+        <label>Função</label>
+        <input type="text" name="funcao"[(ngModel)]="funcionario.funcao" class="form-control"
+        placeholder="Função">
+    </div>
+
+    <button class="btn btn-primary">Gravar</button>
+
+    
+</form>
